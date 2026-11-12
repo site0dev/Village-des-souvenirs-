@@ -160,7 +160,20 @@ footer p{color:#d4dfd5;font: .85rem Arial,sans-serif;margin:5px 0}
 .send{width:100%}
 .note{font-size:.74rem;color:var(--muted);margin:9px 0 0}
 @media(max-width:820px){.hero-grid,.hours-grid,.location-panel{grid-template-columns:1fr}.hero-art{min-height:270px}.navlinks{display:none}.experience-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.hero{padding:62px 0}.hero-grid{gap:32px}.experience-grid{grid-template-columns:1fr}.coming-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.coming-card{padding:16px;min-height:190px}.coming-card h3{font-size:1rem}section{padding:60px 0}.nav{height:74px}.brand svg{width:45px;height:45px}.brand-name{font-size:.85rem}.cart-trigger{padding:10px 13px;font-size:.78rem}.cta-panel{padding:35px 20px}.hours-card{padding:23px}}
+@media(max-width:560px){
+  .hero{padding:62px 0}.hero-grid{gap:32px}
+  /* Toutes les listes et collections de cartes passent en grille mobile 2x2. */
+  .experience-grid,.coming-grid,.product-grid,.contact-list,.hero-actions{
+    display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;align-items:stretch
+  }
+  .info-card{padding:15px;min-width:0}.info-card h3{font-size:1rem;line-height:1.25}.info-card p{font-size:.82rem}
+  .coming-card{padding:16px;min-height:190px;min-width:0}.coming-card h3{font-size:1rem}
+  .contact-link{min-width:0;min-height:64px;padding:10px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:3px;font-size:.8rem;overflow-wrap:anywhere}
+  .contact-link span:last-child{font-size:.72rem}
+  .hero-actions .btn{min-width:0;padding:11px 9px;font-size:.76rem;text-align:center;white-space:normal}
+  .product-grid{gap:10px}.product-visual{min-height:95px;font-size:.9rem}.product-info{padding:12px}.product-info h4{font-size:.95rem}.product-info p{font-size:.8rem}.product-buy{align-items:stretch}.product-buy strong{font-size:.78rem}.add-btn{width:100%;padding:10px}
+  section{padding:60px 0}.nav{height:74px}.brand svg{width:45px;height:45px}.brand-name{font-size:.85rem}.cart-trigger{padding:10px 13px;font-size:.78rem}.cta-panel{padding:35px 20px}.hours-card{padding:23px}
+}
 </style>
 </head>
 <body>
