@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+<link rel="preconnect" href="https://commons.wikimedia.org" crossorigin>
+<link rel="preconnect" href="https://upload.wikimedia.org" crossorigin>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#f7efe5">
@@ -101,8 +104,8 @@ h2{font-size:clamp(2rem,4vw,3.1rem);font-weight:normal;letter-spacing:-.035em;li
 .drink-gingembre{background:linear-gradient(135deg,#d1a34d,#8a6b31)}
 
 .product-visual{min-height:170px;padding:0;display:block;overflow:hidden;background:#eee}
-.product-visual img{display:block;width:100%;height:170px;object-fit:cover;object-position:center}
-@media(max-width:560px){.product-visual{min-height:118px}.product-visual img{height:118px}}
+.product-visual{aspect-ratio:4/3}.product-visual img{display:block;width:100%;height:100%;aspect-ratio:4/3;object-fit:cover;object-position:center}
+@media(max-width:560px){.product-visual{min-height:0}.product-visual img{height:100%}}
 .photo-credit{font:11px/1.4 Arial,sans-serif;color:#7b817b;text-align:center;margin:22px 0 0}
 .product-info{padding:16px;display:flex;flex-direction:column;flex:1}
 .product-info h4{font-size:1.08rem;line-height:1.25;margin:0 0 7px}
@@ -265,42 +268,42 @@ footer p{color:#d4dfd5;font: .85rem Arial,sans-serif;margin:5px 0}
       </div>
       <div class="product-grid">
         <article class="product-card">
-          <div class="product-visual food-attiéké"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Attieke%20au%20poisson%20capitaine.jpg" alt="Photo réelle : Attieke au poisson capitaine" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div>
+          <div class="product-visual food-attiéké"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Attieke%20au%20poisson%20capitaine.jpg?width=640" alt="Photo réelle : Attieke au poisson capitaine" width="640" height="480" loading="lazy" decoding="async" fetchpriority="low" sizes="(max-width: 560px) 50vw, 320px" referrerpolicy="no-referrer"></div>
           <div class="product-info"><h4>Attiéké poisson braisé</h4><p>Poisson braisé accompagné d’attiéké, d’oignons et de tomate.</p>
             <div class="product-buy"><strong>5 000 FCFA</strong><button class="btn add-btn" onclick="addToCart('attieke-poisson')">Ajouter</button></div></div>
         </article>
         <article class="product-card">
-          <div class="product-visual food-poulet"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Poulet%20brais%C3%A9%20attiek%C3%A9.JPG" alt="Photo réelle : Poulet braisé attieké" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div>
+          <div class="product-visual food-poulet"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Poulet%20brais%C3%A9%20attiek%C3%A9.JPG?width=640" alt="Photo réelle : Poulet braisé attieké" width="640" height="480" loading="lazy" decoding="async" fetchpriority="low" sizes="(max-width: 560px) 50vw, 320px" referrerpolicy="no-referrer"></div>
           <div class="product-info"><h4>Poulet braisé</h4><p>Poulet grillé et assaisonné, servi avec son accompagnement.</p>
             <div class="product-buy"><strong>5 000 FCFA</strong><button class="btn add-btn" onclick="addToCart('poulet-braise')">Ajouter</button></div></div>
         </article>
         <article class="product-card">
-          <div class="product-visual food-alloco"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Alloco%20poisson%20sosso.JPG" alt="Photo réelle : Alloco poisson sosso" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div>
+          <div class="product-visual food-alloco"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Alloco%20poisson%20sosso.JPG?width=640" alt="Photo réelle : Alloco poisson sosso" width="640" height="480" loading="lazy" decoding="async" fetchpriority="low" sizes="(max-width: 560px) 50vw, 320px" referrerpolicy="no-referrer"></div>
           <div class="product-info"><h4>Alloco poisson</h4><p>Bananes plantain frites accompagnées de poisson et d’une sauce maison.</p>
             <div class="product-buy"><strong>4 000 FCFA</strong><button class="btn add-btn" onclick="addToCart('alloco-poisson')">Ajouter</button></div></div>
         </article>
         <article class="product-card">
-          <div class="product-visual food-kedjenou"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Kedjenou%20de%20Poulet.jpg" alt="Photo réelle : Kedjenou de Poulet" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div>
+          <div class="product-visual food-kedjenou"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Kedjenou%20de%20Poulet.jpg?width=640" alt="Photo réelle : Kedjenou de Poulet" width="640" height="480" loading="lazy" decoding="async" fetchpriority="low" sizes="(max-width: 560px) 50vw, 320px" referrerpolicy="no-referrer"></div>
           <div class="product-info"><h4>Kédjénou de poulet</h4><p>Poulet mijoté à l’étouffée avec tomates, oignons et aromates.</p>
             <div class="product-buy"><strong>6 000 FCFA</strong><button class="btn add-btn" onclick="addToCart('kedjenou-poulet')">Ajouter</button></div></div>
         </article>
         <article class="product-card">
-          <div class="product-visual food-foutou"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Foutou%20%C3%A0%20la%20sauce%20graine.JPG" alt="Photo réelle : Foutou à la sauce graine" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div>
+          <div class="product-visual food-foutou"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Foutou%20%C3%A0%20la%20sauce%20graine.JPG?width=640" alt="Photo réelle : Foutou à la sauce graine" width="640" height="480" loading="lazy" decoding="async" fetchpriority="low" sizes="(max-width: 560px) 50vw, 320px" referrerpolicy="no-referrer"></div>
           <div class="product-info"><h4>Foutou sauce graine</h4><p>Foutou accompagné d’une sauce graine riche et savoureuse.</p>
             <div class="product-buy"><strong>5 000 FCFA</strong><button class="btn add-btn" onclick="addToCart('foutou-graine')">Ajouter</button></div></div>
         </article>
         <article class="product-card">
-          <div class="product-visual food-placali"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Placali%20%C3%A0%20la%20sauce%20K%C3%B4p%C3%AA.jpg" alt="Photo réelle : Placali à la sauce Kôpê" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div>
+          <div class="product-visual food-placali"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Placali%20%C3%A0%20la%20sauce%20K%C3%B4p%C3%AA.jpg?width=640" alt="Photo réelle : Placali à la sauce Kôpê" width="640" height="480" loading="lazy" decoding="async" fetchpriority="low" sizes="(max-width: 560px) 50vw, 320px" referrerpolicy="no-referrer"></div>
           <div class="product-info"><h4>Placali sauce kopè</h4><p>Placali servi avec une sauce gombo traditionnelle.</p>
             <div class="product-buy"><strong>4 000 FCFA</strong><button class="btn add-btn" onclick="addToCart('placali-kope')">Ajouter</button></div></div>
         </article>
         <article class="product-card">
-          <div class="product-visual food-riz"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Riz%20gras%20sommeill%C3%A9%20de%20legumes%20suivis%20d%27un%20poisson%20carpe.jpg" alt="Photo réelle : Riz gras sommeillé de legumes suivis d'un poisson carpe" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div>
+          <div class="product-visual food-riz"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Riz%20gras%20sommeill%C3%A9%20de%20legumes%20suivis%20d%27un%20poisson%20carpe.jpg?width=640" alt="Photo réelle : Riz gras sommeillé de legumes suivis d'un poisson carpe" width="640" height="480" loading="lazy" decoding="async" fetchpriority="low" sizes="(max-width: 560px) 50vw, 320px" referrerpolicy="no-referrer"></div>
           <div class="product-info"><h4>Riz gras à la viande</h4><p>Riz cuisiné aux légumes et aux épices, accompagné de viande.</p>
             <div class="product-buy"><strong>3 500 FCFA</strong><button class="btn add-btn" onclick="addToCart('riz-gras')">Ajouter</button></div></div>
         </article>
         <article class="product-card">
-          <div class="product-visual food-garba"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Garba%20ovillage.jpg" alt="Photo réelle : Garba ovillage" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div>
+          <div class="product-visual food-garba"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Garba%20ovillage.jpg?width=640" alt="Photo réelle : Garba ovillage" width="640" height="480" loading="lazy" decoding="async" fetchpriority="low" sizes="(max-width: 560px) 50vw, 320px" referrerpolicy="no-referrer"></div>
           <div class="product-info"><h4>Garba</h4><p>Attiéké et thon frit, relevés d’oignons, de piment et de tomate.</p>
             <div class="product-buy"><strong>2 500 FCFA</strong><button class="btn add-btn" onclick="addToCart('garba')">Ajouter</button></div></div>
         </article>
@@ -314,12 +317,12 @@ footer p{color:#d4dfd5;font: .85rem Arial,sans-serif;margin:5px 0}
       </div>
       <div class="product-grid drinks-grid">
         <article class="product-card">
-          <div class="product-visual drink-bissap"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jus%20de%20bissap.jpg" alt="Photo réelle : Jus de bissap" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div>
+          <div class="product-visual drink-bissap"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jus%20de%20bissap.jpg?width=640" alt="Photo réelle : Jus de bissap" width="640" height="480" loading="lazy" decoding="async" fetchpriority="low" sizes="(max-width: 560px) 50vw, 320px" referrerpolicy="no-referrer"></div>
           <div class="product-info"><h4>Jus de bissap</h4><p>Boisson fraîche à base de fleurs d’hibiscus, douce et parfumée.</p>
             <div class="product-buy"><strong>1 000 FCFA</strong><button class="btn add-btn" onclick="addToCart('jus-bissap')">Ajouter</button></div></div>
         </article>
         <article class="product-card">
-          <div class="product-visual drink-gingembre"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ginger%20Juice.jpg" alt="Photo réelle : Ginger Juice" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div>
+          <div class="product-visual drink-gingembre"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ginger%20Juice.jpg?width=640" alt="Photo réelle : Ginger Juice" width="640" height="480" loading="lazy" decoding="async" fetchpriority="low" sizes="(max-width: 560px) 50vw, 320px" referrerpolicy="no-referrer"></div>
           <div class="product-info"><h4>Jus de gingembre</h4><p>Boisson fraîche au gingembre, avec une note tonique et épicée.</p>
             <div class="product-buy"><strong>1 000 FCFA</strong><button class="btn add-btn" onclick="addToCart('jus-gingembre')">Ajouter</button></div></div>
         </article>
